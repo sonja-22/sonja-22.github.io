@@ -1,3 +1,4 @@
+/*
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
 
@@ -22,17 +23,20 @@ myButton.onclick = function() {
   setUserName();
 }
 
+
 const sHeading = document.querySelector('h2');
 sHeading.textContent = 'Changed By JavaScript.';
 
 let vari1 = 'Sandwich';
 
+/*
 let iceCream = 'chocolate';
 if(iceCream === 'chocolate') {
   alert('Yay, I love chocolate ice cream!');
 } else {
   alert('Awwww, but chocolate is my favorite...');
 }
+*/
 
 function multiply(num1,num2) {
   let result = num1 * num2;

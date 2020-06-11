@@ -1,27 +1,41 @@
 html {
 		font-family: 'Metal Mania', cursive;
 		font-size: 20px;
-		background-color: #00539F;
+		background-color: #000;
+		color: #eee;
 }
 
 body {
-  width: 600px;
-  margin: 0 auto;
-  background-color: #FF9500;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
+		margin: 0 auto;
+		background-color: #111;
+		color: #eee;
+}
+
+header {
+		top: 0;
+		width: 100%;
+		font-size: 50px;
+		letter-spacing: 20px;
+		text-align: center;
+		color: #a63;
+}
+
+footer {
+		padding: 20px 0;
+		width: 100%;
+		font-size: 10px;
+		text-align: center;
+		background-color: #000;
+		color: #ddd;
 }
 
 h1 {
 		margin: 0;
-		padding: 20px 0;
+		padding: 25px 0;
 		text-align: center;
-		color: red;
-		text-shadow: 3px 3px 1px black;
 }
 
 p {
-		width: 700px;
 		line-height: 1;
 		letter-spacing: 10px;
 }
