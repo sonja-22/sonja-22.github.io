@@ -1,3 +1,29 @@
+/* Tree Lists */
+var toggler = document.getElementsByClassName("caret");
+var tl;
+
+for (tl = 0; tl < toggler.length; tl++) {
+  toggler[tl].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+
+/* Collapsible Content */
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("actcoll");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
 /*
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
@@ -38,10 +64,6 @@ if(iceCream === 'chocolate') {
 }
 */
 
-function multiply(num1,num2) {
-  let result = num1 * num2;
-  return result;
-}
 
 /*document.querySelector('html').onclick = function() {
     alert('If this was another webpage you would I would have opened an ad on another tab, or if I was extra villainous, on the same one as this.');

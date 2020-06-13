@@ -1,9 +1,13 @@
 html {
 		font-family: 'Metal Mania', cursive;
-		font-size: 20px;
+		font-size: 14pt;
 		background-color: #000;
 		color: #eee;
 }
+
+
+
+
 
 body {
 		margin: 0 auto;
@@ -14,33 +18,329 @@ body {
 header {
 		top: 0;
 		width: 100%;
-		font-size: 50px;
+		font-size: 40pt;
 		letter-spacing: 20px;
 		text-align: center;
-		color: #a63;
+		color: #700;
+}
+
+main {
+		margin: auto;
+		width: 80%;
+		text-align: justify;
+}
+
+main#article {
+		margin: auto;
+		padding-left: 2%;
+		padding-right: 2%;
+		padding-bottom: 2%;
+		width: 50%;
+		text-align: justify;
+		background-color: #da7;
+		color: #222;
 }
 
 footer {
-		padding: 20px 0;
+		padding: 1% 0;
 		width: 100%;
-		font-size: 10px;
+		font-size: 8pt;
 		text-align: center;
 		background-color: #000;
 		color: #ddd;
 }
 
-h1 {
-		margin: 0;
-		padding: 25px 0;
-		text-align: center;
-}
 
-p {
-		line-height: 1;
-		letter-spacing: 10px;
-}
 
 img {
 		display: block;
 		margin: 0 auto;
+}
+
+
+
+
+
+/* Headers */
+h1 {
+		text-align: center;
+		margin: 0;
+		padding: 2% 0;
+}
+
+
+h3.hr {
+		color: #700;
+}
+
+
+
+
+
+
+
+
+/* Tree Lists */
+ul, .tl {
+		list-style-type: none;
+}
+
+.tl {
+		margin: 0;
+		padding: 0;
+}
+
+/* Caret Symbol */
+.caret {
+		cursor: pointer;
+		-webkit-user-select: none; /* Safari 3.1+ */
+		-moz-user-select: none; /* Firefox 2+ */
+		-ms-user-select: none; /* IE 10+ */
+		user-select: none;
+}
+
+.caret::before {
+		content: "\25B6";
+		color: black;
+		display: inline-block;
+		margin-right: 6px;
+}
+
+.caret-down::before {
+		-ms-transform: rotate(90deg); /* IE 9 */
+		-webkit-transform: rotate(90deg); /* Safari */
+		transform: rotate(90deg);
+}
+
+.nested {
+		display: none;
+}
+
+.active {
+		display: block;
+}
+
+
+/* Level Changes */
+.tl li {
+		font-size: 22pt;
+		line-height: 2;
+		letter-spacing: 5pt;
+		text-align: left;
+		
+}
+
+.tl li li {
+		font-size: 20pt;
+		line-height: 2;
+		letter-spacing: 4pt;
+		text-align: left;
+		
+}
+
+.tl li li li{
+		font-size: 18pt;
+		line-height: 2;
+		letter-spacing: 3pt;
+		text-align: left;
+		
+}
+
+.tl li li li li {
+		font-size: 16pt;
+		line-height: 2;
+		letter-spacing: 2pt;
+		text-align: left;
+		
+}
+
+.tl li li li li li {
+		font-size: 14pt;
+		line-height: 2;
+		letter-spacing: 1pt;
+		text-align: left;
+		
+}
+
+.tl li li li li li li {
+		font-size: 12pt;
+		line-height: 2;
+		letter-spacing: 0pt;
+		text-align: left;
+		
+}
+
+
+
+
+
+/* Collapsible Content */
+
+.collbutt {
+}
+ /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+		font-family: 'Metal Mania', cursive;
+		padding: 1%;
+		cursor: pointer;
+		border: none;
+		outline: none;
+		text-align: center;
+		width: 20%;
+		background-color: #300;
+		color: #ddd;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.actcoll, .collapsible:hover {
+		background-color: #700;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collcont {
+		padding: 0 2%;
+		display: none;
+		overflow: hidden;
+}
+
+
+
+
+
+/* Center Table */
+table {
+		border-collapse: collapse;
+		width: 100%;
+		margin-top: 2%;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #ddd;
+		color: #333;
+}
+table, th, td {
+		border: 3px solid black;
+}
+
+th {
+		font-size: 120%;
+		background-color: #300;
+		color: #ddd;
+}
+th, td {
+		text-align: center;
+}
+
+
+
+
+
+
+/* Arrows */
+.arrow {
+		border: solid black;
+		border-width: 0 3px 3px 0;
+		display: inline-block;
+		padding: 3px;
+}
+
+.right {
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+}
+
+.left {
+		transform: rotate(135deg);
+		-webkit-transform: rotate(135deg);
+}
+
+.up {
+		transform: rotate(-135deg);
+		-webkit-transform: rotate(-135deg);
+}
+
+.down {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+}
+
+
+
+
+
+/* Tooltips */
+ /* Tooltip container */
+.tooltip {
+		position: relative;
+		display: inline-block;
+		border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+		visibility: hidden;
+		width: 120px;
+		background-color: #555;
+		color: #fff;
+		text-align: center;
+		padding: 5px 0;
+		border-radius: 6px;
+
+		/* Position the tooltip text */
+		position: absolute;
+		z-index: 1;
+		bottom: 125%;
+		left: 50%;
+		margin-left: -60px;
+
+		/* Fade in tooltip */
+		opacity: 0;
+		transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+		visibility: visible;
+		opacity: 1;
+}
+
+
+
+
+
+/* Dividers */
+ /* Dashed border */
+main#article hr.dashed {
+  border-top: 2px dashed #700;
+  color: #da7;
+}
+
+/* Dotted border */
+main#article hr.dotted {
+  border-top: 5px dotted #700;
+  color: #da7;
+}
+
+/* Solid border */
+main#article hr.solid {
+  border-top: 2px solid #700;
+  color: #da7;
+}
+
+/* Rounded border */
+main#article hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+  color: #da7;
 }
